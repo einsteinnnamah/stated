@@ -11,6 +11,27 @@
 
     <div class="container">
         <h1>JS issueTracker<small>by CodingTheSmartWay.com</small></h1>
+        <div class="Jumbotron">
+            <h3>Add new Issue</h3>
+            <form id="issueInputForm">
+                <div class="form-group">
+                    <label for="issueDescription">Description</label>
+                    <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue...">
+                </div>
+                <div class="form-group">
+                    <label for="issueSeverity">Severity</label>
+                    <select  id="issueSeverity" class="form-control">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issueDescription">Description</label>
+                    <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue...">
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="http://chancejs.com/chance.min.js"></script>
