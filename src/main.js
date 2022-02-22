@@ -20,9 +20,14 @@ function saveIssue(e){
         localStorage.setItem('issues', JSON.stringify(issues));
     } else {
         let issues = JSON.parse(localStorage.getItem('issues'));
-        issues.push
+        issues.push(issue);
+        localStorage.setItem('issues', JSON.stringify(issues));
     }
 
+    document.getElementById('issueInputForm').requestFullscreen();
+
+    fetchIssues();
+    e.preventDefault();
 
 }
 function fetchIssues() {
